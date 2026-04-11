@@ -7,9 +7,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-    <header class="border-b border-yellow-400/80 bg-white/80 backdrop-blur">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-6">
-        <a href="index.html" class="flex items-center gap-3">
+    <header class="relative z-40 border-b border-yellow-400/80 bg-white/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+        <a href="index.html" class="flex items-center gap-3 shrink-0 min-w-0">
           <div class="h-10 w-10 rounded-full bg-yellow-500 flex items-center justify-center text-slate-900 font-semibold">
             MH
           </div>
@@ -22,47 +22,55 @@
             </p>
           </div>
         </a>
-        <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
-          <a href="index.html" class="hover:text-yellow-700">Home</a>
-          <div class="relative group">
-            <a href="properties.html" class="inline-flex items-center gap-1 hover:text-yellow-700">
-              Properties
-              <span class="text-[10px] text-slate-400 group-hover:text-yellow-600" aria-hidden="true">▾</span>
-            </a>
-            <div
-              class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity absolute left-0 top-full z-50 pt-2 w-[min(100vw-2rem,44rem)]"
-            >
-              <div class="rounded-xl border border-slate-200 bg-white shadow-lg p-4 text-xs">
-                <p class="text-[10px] font-semibold uppercase tracking-wide text-slate-400 mb-2">Quick links</p>
-                <div class="flex flex-wrap gap-x-4 gap-y-1 pb-3 mb-3 border-b border-slate-100">
-                  <a href="enterprise-way.html" class="text-slate-700 hover:text-yellow-700">Enterprise Way Townhomes</a>
-                  <a href="radius-center.html" class="text-slate-700 hover:text-yellow-700">Radius Center</a>
-                  <a href="walker-centre.html" class="text-slate-700 hover:text-yellow-700">4450 Walker Road Plaza</a>
-                  <a href="lauzon-j-max-plaza.html" class="text-slate-700 hover:text-yellow-700">J Max Plaza</a>
-                  <a href="us-properties.html" class="text-slate-700 hover:text-yellow-700">US Properties</a>
-                </div>
-                <p class="text-[10px] font-semibold uppercase tracking-wide text-slate-400 mb-2">Our properties</p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0.5 max-h-[min(60vh,22rem)] overflow-y-auto">
-                  <a href="properties.html#a-cibc-ouellette" class="py-1.5 text-slate-700 hover:text-yellow-700">a. CIBC – 100 Ouellette, Windsor</a>
-                  <a href="properties.html#b-university-33" class="py-1.5 text-slate-700 hover:text-yellow-700">b. 33 University, Windsor</a>
-                  <a href="lauzon-j-max-plaza.html" class="py-1.5 text-slate-700 hover:text-yellow-700">c. 2601 Lauzon Parkway – J Max Plaza</a>
-                  <a href="enterprise-way.html" class="py-1.5 text-slate-700 hover:text-yellow-700">d. Enterprise Way Townhomes</a>
-                  <a href="properties.html#e-howard-2679" class="py-1.5 text-slate-700 hover:text-yellow-700">e. 2679 Howard</a>
-                  <a href="properties.html#f-pancap" class="py-1.5 text-slate-700 hover:text-yellow-700">f. Pancap</a>
-                  <a href="walker-centre.html" class="py-1.5 text-slate-700 hover:text-yellow-700">g. 4450 Walker Road Plaza</a>
-                  <a href="properties.html#h-staples-plaza" class="py-1.5 text-slate-700 hover:text-yellow-700">h. Staples Plaza</a>
-                  <a href="properties.html#i-landmark-plaza" class="py-1.5 text-slate-700 hover:text-yellow-700">i. Landmark Plaza</a>
-                  <a href="properties.html#j-walmart-amherstburg" class="py-1.5 text-slate-700 hover:text-yellow-700">j. Wal-Mart, Amherstburg</a>
-                  <a href="properties.html#k-sobeys-amherstburg" class="py-1.5 text-slate-700 hover:text-yellow-700">k. Sobeys, Amherstburg</a>
-                  <a href="properties.html#l-leamington-waterfront" class="py-1.5 text-slate-700 hover:text-yellow-700">l. Leamington Waterfront Townhomes</a>
-                  <a href="us-properties.html" class="py-1.5 text-slate-700 hover:text-yellow-700">m. US Properties – 3003 N Central</a>
+        <div class="flex flex-1 min-w-0 items-center justify-end gap-3 sm:gap-4">
+          <nav class="hidden lg:flex items-center gap-5 text-sm font-medium" aria-label="Primary">
+            <a href="index.html" class="text-slate-700 hover:text-yellow-700">Home</a>
+            <div class="relative group">
+              <a href="properties.html" class="inline-flex items-center gap-1 text-slate-700 hover:text-yellow-700">
+                Properties
+                <span class="text-[10px] text-slate-400 group-hover:text-yellow-600" aria-hidden="true">▾</span>
+              </a>
+              <div
+                class="invisible opacity-0 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100 transition-opacity absolute right-0 lg:left-0 top-full z-50 pt-2 w-[min(100vw-2rem,44rem)]"
+              >
+                <div class="rounded-xl border border-slate-200 bg-white shadow-lg p-4 text-xs">
+                  <p class="text-[10px] font-semibold uppercase tracking-wide text-slate-400 mb-2">Quick links</p>
+                  <div class="flex flex-wrap gap-x-4 gap-y-1 pb-3 mb-3 border-b border-slate-100">
+                    <a href="enterprise-way.html" class="text-slate-700 hover:text-yellow-700">Enterprise Way Townhomes</a>
+                    <a href="radius-center.html" class="text-slate-700 hover:text-yellow-700">Radius Center</a>
+                    <a href="walker-centre.html" class="text-slate-700 hover:text-yellow-700">4450 Walker Road Plaza</a>
+                    <a href="lauzon-j-max-plaza.html" class="text-slate-700 hover:text-yellow-700">J Max Plaza</a>
+                    <a href="us-properties.html" class="text-slate-700 hover:text-yellow-700">US Properties</a>
+                  </div>
+                  <p class="text-[10px] font-semibold uppercase tracking-wide text-slate-400 mb-2">Our properties</p>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0.5 max-h-[min(60vh,22rem)] overflow-y-auto">
+                    <a href="properties.html#a-cibc-ouellette" class="py-1.5 text-slate-700 hover:text-yellow-700">a. CIBC – 100 Ouellette, Windsor</a>
+                    <a href="properties.html#b-university-33" class="py-1.5 text-slate-700 hover:text-yellow-700">b. 33 University, Windsor</a>
+                    <a href="lauzon-j-max-plaza.html" class="py-1.5 text-slate-700 hover:text-yellow-700">c. 2601 Lauzon Parkway – J Max Plaza</a>
+                    <a href="enterprise-way.html" class="py-1.5 text-slate-700 hover:text-yellow-700">d. Enterprise Way Townhomes</a>
+                    <a href="properties.html#e-howard-2679" class="py-1.5 text-slate-700 hover:text-yellow-700">e. 2679 Howard</a>
+                    <a href="properties.html#f-pancap" class="py-1.5 text-slate-700 hover:text-yellow-700">f. Pancap</a>
+                    <a href="walker-centre.html" class="py-1.5 text-slate-700 hover:text-yellow-700">g. 4450 Walker Road Plaza</a>
+                    <a href="properties.html#h-staples-plaza" class="py-1.5 text-slate-700 hover:text-yellow-700">h. Staples Plaza</a>
+                    <a href="properties.html#i-landmark-plaza" class="py-1.5 text-slate-700 hover:text-yellow-700">i. Landmark Plaza</a>
+                    <a href="properties.html#j-walmart-amherstburg" class="py-1.5 text-slate-700 hover:text-yellow-700">j. Wal-Mart, Amherstburg</a>
+                    <a href="properties.html#k-sobeys-amherstburg" class="py-1.5 text-slate-700 hover:text-yellow-700">k. Sobeys, Amherstburg</a>
+                    <a href="properties.html#l-leamington-waterfront" class="py-1.5 text-slate-700 hover:text-yellow-700">l. Leamington Waterfront Townhomes</a>
+                    <a href="us-properties.html" class="py-1.5 text-slate-700 hover:text-yellow-700">m. US Properties – 3003 N Central</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <a href="radius-center.html" class="hover:text-yellow-700">Radius Center</a>
-          <a href="contact.html" class="text-yellow-700">Contact</a>
-        </nav>
+            <a href="radius-center.html" class="text-slate-700 hover:text-yellow-700">Radius Center</a>
+            <a href="contact.html" class="text-yellow-700">Contact</a>
+          </nav>
+          <a
+            href="contact.html"
+            class="inline-flex items-center justify-center rounded-full border border-yellow-500 bg-yellow-500 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:bg-yellow-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400 focus-visible:ring-offset-2 whitespace-nowrap"
+          >
+            Lease With Us
+          </a>
+        </div>
       </div>
     </header>
 
