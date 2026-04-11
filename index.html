@@ -22,12 +22,45 @@
             </p>
           </div>
         </a>
-        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <nav class="hidden lg:flex items-center gap-5 text-sm font-medium">
           <a href="index.html" class="text-yellow-700">Home</a>
-          <a href="properties.html" class="hover:text-yellow-700">Properties</a>
-          <a href="enterprise-way.html" class="hover:text-yellow-700">Enterprise Way</a>
+          <div class="relative group">
+            <a href="properties.html" class="inline-flex items-center gap-1 hover:text-yellow-700">
+              Properties
+              <span class="text-[10px] text-slate-400 group-hover:text-yellow-600" aria-hidden="true">▾</span>
+            </a>
+            <div
+              class="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity absolute left-0 top-full z-50 pt-2 w-[min(100vw-2rem,44rem)]"
+            >
+              <div class="rounded-xl border border-slate-200 bg-white shadow-lg p-4 text-xs">
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-slate-400 mb-2">Quick links</p>
+                <div class="flex flex-wrap gap-x-4 gap-y-1 pb-3 mb-3 border-b border-slate-100">
+                  <a href="enterprise-way.html" class="text-slate-700 hover:text-yellow-700">Enterprise Way Townhomes</a>
+                  <a href="radius-center.html" class="text-slate-700 hover:text-yellow-700">Radius Center</a>
+                  <a href="walker-centre.html" class="text-slate-700 hover:text-yellow-700">4450 Walker Road Plaza</a>
+                  <a href="lauzon-j-max-plaza.html" class="text-slate-700 hover:text-yellow-700">J Max Plaza</a>
+                  <a href="us-properties.html" class="text-slate-700 hover:text-yellow-700">US Properties</a>
+                </div>
+                <p class="text-[10px] font-semibold uppercase tracking-wide text-slate-400 mb-2">Our properties</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0.5 max-h-[min(60vh,22rem)] overflow-y-auto">
+                  <a href="properties.html#a-cibc-ouellette" class="py-1.5 text-slate-700 hover:text-yellow-700">a. CIBC – 100 Ouellette, Windsor</a>
+                  <a href="properties.html#b-university-33" class="py-1.5 text-slate-700 hover:text-yellow-700">b. 33 University, Windsor</a>
+                  <a href="lauzon-j-max-plaza.html" class="py-1.5 text-slate-700 hover:text-yellow-700">c. 2601 Lauzon Parkway – J Max Plaza</a>
+                  <a href="enterprise-way.html" class="py-1.5 text-slate-700 hover:text-yellow-700">d. Enterprise Way Townhomes</a>
+                  <a href="properties.html#e-howard-2679" class="py-1.5 text-slate-700 hover:text-yellow-700">e. 2679 Howard</a>
+                  <a href="properties.html#f-pancap" class="py-1.5 text-slate-700 hover:text-yellow-700">f. Pancap</a>
+                  <a href="walker-centre.html" class="py-1.5 text-slate-700 hover:text-yellow-700">g. 4450 Walker Road Plaza</a>
+                  <a href="properties.html#h-staples-plaza" class="py-1.5 text-slate-700 hover:text-yellow-700">h. Staples Plaza</a>
+                  <a href="properties.html#i-landmark-plaza" class="py-1.5 text-slate-700 hover:text-yellow-700">i. Landmark Plaza</a>
+                  <a href="properties.html#j-walmart-amherstburg" class="py-1.5 text-slate-700 hover:text-yellow-700">j. Wal-Mart, Amherstburg</a>
+                  <a href="properties.html#k-sobeys-amherstburg" class="py-1.5 text-slate-700 hover:text-yellow-700">k. Sobeys, Amherstburg</a>
+                  <a href="properties.html#l-leamington-waterfront" class="py-1.5 text-slate-700 hover:text-yellow-700">l. Leamington Waterfront Townhomes</a>
+                  <a href="us-properties.html" class="py-1.5 text-slate-700 hover:text-yellow-700">m. US Properties – 3003 N Central</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <a href="radius-center.html" class="hover:text-yellow-700">Radius Center</a>
-          <a href="walker-centre.html" class="hover:text-yellow-700">Walker Towne Centre</a>
           <a href="contact.html" class="hover:text-yellow-700">Contact</a>
         </nav>
         <a
@@ -117,14 +150,14 @@
             each property page.
           </p>
         </header>
-        <div class="grid gap-6 md:grid-cols-3">
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <a
             href="enterprise-way.html"
             class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
           >
             <img
               src="wetransfer_enterprise-way-mp4_2026-03-12_1544/20210830_094543.jpg"
-              alt="Enterprise Way property"
+              alt="Enterprise Way Townhomes"
               class="h-40 w-full object-cover transition group-hover:scale-105"
             />
             <div class="flex-1 p-4 space-y-2">
@@ -132,10 +165,10 @@
                 Windsor, Ontario
               </p>
               <h3 class="text-sm font-semibold text-slate-900">
-                Enterprise Way – Industrial / Office Flex
+                Enterprise Way Townhomes
               </h3>
               <p class="text-xs text-slate-600">
-                Multi‑tenant industrial building with good loading, circulation, and ample parking.
+                Residential townhomes with site plans, drawings, and a video tour on the property page.
               </p>
             </div>
           </a>
@@ -168,7 +201,7 @@
           >
             <img
               src="wetransfer_enterprise-way-mp4_2026-03-12_1544/20190607_072155_resized.jpg"
-              alt="Walker Towne Centre pylon sign"
+              alt="4450 Walker Road Plaza pylon sign"
               class="h-40 w-full object-cover transition group-hover:scale-105"
             />
             <div class="flex-1 p-4 space-y-2">
@@ -176,14 +209,62 @@
                 Windsor, Ontario
               </p>
               <h3 class="text-sm font-semibold text-slate-900">
-                Walker Towne Centre – Retail Plaza
+                4450 Walker Road Plaza
               </h3>
               <p class="text-xs text-slate-600">
-                High‑visibility retail centre with national brands, strong traffic, and pylon signage.
+                High‑visibility retail with national tenants, strong traffic, and pylon signage.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="lauzon-j-max-plaza.html"
+            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
+          >
+            <div
+              class="h-40 w-full bg-slate-200 flex items-center justify-center text-xs text-slate-500 px-4 text-center transition group-hover:bg-slate-300/80"
+            >
+              Image to be updated
+            </div>
+            <div class="flex-1 p-4 space-y-2">
+              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
+                Windsor, Ontario
+              </p>
+              <h3 class="text-sm font-semibold text-slate-900">
+                2601 Lauzon Parkway – J Max Plaza
+              </h3>
+              <p class="text-xs text-slate-600">
+                Retail plaza; offering memorandum on its own listing (separate from Radius Center).
+              </p>
+            </div>
+          </a>
+
+          <a
+            href="us-properties.html"
+            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
+          >
+            <div
+              class="h-40 w-full bg-slate-200 flex items-center justify-center text-xs text-slate-500 px-4 text-center transition group-hover:bg-slate-300/80"
+            >
+              US aerial on property page
+            </div>
+            <div class="flex-1 p-4 space-y-2">
+              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
+                United States
+              </p>
+              <h3 class="text-sm font-semibold text-slate-900">
+                US Properties – 3003 N Central
+              </h3>
+              <p class="text-xs text-slate-600">
+                Arizona aerial overview PDF and US portfolio materials.
               </p>
             </div>
           </a>
         </div>
+        <p class="text-xs text-slate-500">
+          Full portfolio list (a–m) is in the <a href="properties.html" class="text-yellow-700 hover:underline">Properties</a> page
+          and under <strong>Properties</strong> in the menu.
+        </p>
       </section>
 
       <section class="max-w-6xl mx-auto px-4 pb-14 space-y-4">
@@ -236,7 +317,9 @@
         </p>
         <p class="text-xs text-slate-500">
           For leasing inquiries, email
-          <span class="font-medium text-slate-700">service@mikhailholdings.com</span>
+          <a href="mailto:leasing@mikhailholdings.com" class="font-medium text-slate-700 hover:text-yellow-700"
+            >leasing@mikhailholdings.com</a
+          >
         </p>
       </div>
     </footer>
