@@ -1,352 +1,204 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mikhail Holdings Limited – Commercial Properties</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.8/cdn.min.js" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
-    <header class="relative z-40 border-b border-amber-400/60 bg-slate-900 text-white shadow-xl">
-      <div class="border-b border-white/10 py-6 text-center">
-        <a href="index.html" class="inline-block px-4">
-          <h1 class="text-3xl font-black uppercase tracking-[0.24em] text-amber-400 sm:text-4xl">Mikhail Holdings Ltd.</h1>
-        </a>
-      </div>
-      <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4">
-        <nav class="hidden items-center text-sm font-medium lg:flex" aria-label="Primary">
-        <a href="index.html" data-nav-link="home" class="px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">Home</a>
-          <div class="group relative">
-          <a href="properties.html" data-nav-link="properties" class="inline-flex items-center gap-1 px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">
-              Properties
-              <span class="text-[10px]" aria-hidden="true">▾</span>
-            </a>
-            <div
-              class="invisible absolute left-0 top-full z-50 w-[min(100vw-2rem,44rem)] pt-2 opacity-0 transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
-            >
-              <div class="rounded-xl border border-slate-700 bg-slate-900 p-4 text-xs shadow-2xl">
-                <p class="mb-2 text-[10px] font-semibold uppercase tracking-wide text-amber-300/70">Quick links</p>
-                <div class="mb-3 flex flex-wrap gap-x-4 gap-y-1 border-b border-white/10 pb-3">
-                  <a href="enterprise-way.html" class="text-white/85 hover:text-amber-300">Enterprise Way Townhomes</a>
-                  <a href="radius-center.html" class="text-white/85 hover:text-amber-300">Radius Center</a>
-                  <a href="pancap.html" class="text-white/85 hover:text-amber-300">Pancap</a>
-                  <a href="walker-centre.html" class="text-white/85 hover:text-amber-300">4450 Walker Road Plaza</a>
-                  <a href="lauzon-j-max-plaza.html" class="text-white/85 hover:text-amber-300">J Max Plaza</a>
-                  <a href="us-properties.html" class="text-white/85 hover:text-amber-300">US Properties</a>
-                </div>
-                <p class="mb-2 text-[10px] font-semibold uppercase tracking-wide text-amber-300/70">Our properties</p>
-                <div class="grid max-h-[min(60vh,22rem)] grid-cols-1 gap-x-6 gap-y-0.5 overflow-y-auto sm:grid-cols-2">
-                  <a href="properties.html#a-cibc-ouellette" class="py-1.5 text-white/85 hover:text-amber-300">a. CIBC - 100 Ouellette, Windsor</a>
-                  <a href="properties.html#b-university-33" class="py-1.5 text-white/85 hover:text-amber-300">b. 33 University, Windsor</a>
-                  <a href="lauzon-j-max-plaza.html" class="py-1.5 text-white/85 hover:text-amber-300">c. 2601 Lauzon Parkway - J Max Plaza</a>
-                  <a href="enterprise-way.html" class="py-1.5 text-white/85 hover:text-amber-300">d. Enterprise Way Townhomes</a>
-                  <a href="properties.html#e-howard-2679" class="py-1.5 text-white/85 hover:text-amber-300">e. 2679 Howard</a>
-                  <a href="pancap.html" class="py-1.5 text-white/85 hover:text-amber-300">f. Pancap</a>
-                  <a href="walker-centre.html" class="py-1.5 text-white/85 hover:text-amber-300">g. 4450 Walker Road Plaza</a>
-                  <a href="properties.html#h-staples-plaza" class="py-1.5 text-white/85 hover:text-amber-300">h. Staples Plaza</a>
-                  <a href="properties.html#i-landmark-plaza" class="py-1.5 text-white/85 hover:text-amber-300">i. Landmark Plaza</a>
-                  <a href="properties.html#j-walmart-amherstburg" class="py-1.5 text-white/85 hover:text-amber-300">j. Wal-Mart, Amherstburg</a>
-                  <a href="properties.html#k-sobeys-amherstburg" class="py-1.5 text-white/85 hover:text-amber-300">k. Sobeys, Amherstburg</a>
-                  <a href="properties.html#l-leamington-waterfront" class="py-1.5 text-white/85 hover:text-amber-300">l. Leamington Waterfront Townhomes</a>
-                  <a href="us-properties.html" class="py-1.5 text-white/85 hover:text-amber-300">m. US Properties - 3003 N Central</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a href="radius-center.html" data-nav-link="radius" class="px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">Radius Center</a>
-          <a href="contact.html" data-nav-link="contact" class="px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">Contact</a>
-        </nav>
-        <a
-          href="contact.html"
-          class="my-2 inline-flex items-center justify-center rounded-full border border-amber-400 bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 whitespace-nowrap"
-        >
-          Lease With Us
-        </a>
-      </div>
-    </header>
 
-    <main class="flex-1">
-      <section class="relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-yellow-700 via-amber-700 to-slate-900 opacity-95"></div>
-        <div class="relative max-w-6xl mx-auto px-4 py-16 lg:py-24 grid gap-12 lg:grid-cols-2 items-center">
-          <div class="space-y-6 text-white">
-            <p class="inline-flex items-center rounded-full bg-yellow-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-yellow-100 ring-1 ring-yellow-300/70">
-              Established Canadian Owner &amp; Operator
-            </p>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight">
-              Retail, Office &amp; Industrial Space Across Ontario
-            </h1>
-            <p class="text-sm sm:text-base text-emerald-50/90 leading-relaxed">
-              Professionally managed commercial properties with strong anchors, excellent visibility, and flexible unit sizes.
-              We work directly with tenants to build spaces that support long‑term success.
-            </p>
-            <dl class="grid grid-cols-2 gap-4 text-sm">
-              <div class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
-                <dt class="text-yellow-100">Portfolio</dt>
-                <dd class="mt-1 font-semibold">Retail, Office, Industrial</dd>
-              </div>
-              <div class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10">
-                <dt class="text-yellow-100">Locations</dt>
-                <dd class="mt-1 font-semibold">Windsor, Pickering &amp; more</dd>
-              </div>
-            </dl>
-            <div class="flex flex-wrap gap-3">
-              <a
-                href="properties.html"
-                class="inline-flex items-center justify-center rounded-full bg-yellow-400 px-5 py-2.5 text-sm font-semibold text-slate-900 shadow-sm hover:bg-yellow-300"
-              >
-                View Available Units
-              </a>
-              <a
-                href="contact.html"
-                class="inline-flex items-center justify-center rounded-full border border-white/60 px-5 py-2.5 text-sm font-semibold text-white hover:bg-white/5"
-              >
-                Request Leasing Info
-              </a>
-            </div>
-          </div>
-          <div class="space-y-6">
-            <div class="grid grid-cols-2 gap-4">
-              <figure class="col-span-2 rounded-2xl overflow-hidden shadow-xl ring-1 ring-slate-900/10">
-                <img
-                  src="wetransfer_enterprise-way-mp4_2026-03-12_1544/Image10.jpg"
-                  alt="Perspective rendering of commercial plaza"
-                  class="h-64 w-full object-cover"
-                />
-              </figure>
-              <figure class="rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-900/10">
-                <img
-                  src="wetransfer_enterprise-way-mp4_2026-03-12_1544/Radius_Center.png"
-                  alt="Aerial overview of Radius Center site"
-                  class="h-36 w-full object-cover"
-                />
-              </figure>
-              <figure class="rounded-2xl overflow-hidden shadow-lg ring-1 ring-slate-900/10">
-                <img
-                  src="wetransfer_enterprise-way-mp4_2026-03-12_1544/4450_Walker_Road_Plaza.jpg"
-                  alt="Pylon sign with retail tenants"
-                  class="h-36 w-full object-cover"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mikhail Holdings Limited – Commercial Properties</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.14.8/cdn.min.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-      <section class="max-w-6xl mx-auto px-4 py-12 space-y-10">
-        <header class="space-y-2">
-          <h2 class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">
-            Featured Properties
-          </h2>
-          <p class="text-sm text-slate-600">
-            Explore a selection of our key assets. Detailed blueprints, site plans, and marketing materials are available on
-            each property page.
-          </p>
-        </header>
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <a
-            href="enterprise-way.html"
-            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
-          >
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/Enterprise_Way_Townhomes_1.jpg"
-              alt="Enterprise Way Townhomes"
-              class="h-40 w-full object-cover transition group-hover:scale-105"
-            />
-            <div class="flex-1 p-4 space-y-2">
-              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
-                Windsor, Ontario
-              </p>
-              <h3 class="text-sm font-semibold text-slate-900">
-                Enterprise Way Townhomes
-              </h3>
-              <p class="text-xs text-slate-600">
-                Residential townhomes with site plans, drawings, and a video tour on the property page.
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="radius-center.html"
-            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
-          >
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/Radius_Center.png"
-              alt="Radius Center aerial"
-              class="h-40 w-full object-cover transition group-hover:scale-105"
-            />
-            <div class="flex-1 p-4 space-y-2">
-              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
-                Windsor, Ontario
-              </p>
-              <h3 class="text-sm font-semibold text-slate-900">
-                Radius Center – Industrial &amp; Logistics
-              </h3>
-              <p class="text-xs text-slate-600">
-                Large format industrial campus with truck courts and dedicated snow management plan.
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="walker-centre.html"
-            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
-          >
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/4450_Walker_Road_Plaza.jpg"
-              alt="4450 Walker Road Plaza pylon sign"
-              class="h-40 w-full object-cover transition group-hover:scale-105"
-            />
-            <div class="flex-1 p-4 space-y-2">
-              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
-                Windsor, Ontario
-              </p>
-              <h3 class="text-sm font-semibold text-slate-900">
-                4450 Walker Road Plaza
-              </h3>
-              <p class="text-xs text-slate-600">
-                High‑visibility retail with national tenants, strong traffic, and pylon signage.
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="lauzon-j-max-plaza.html"
-            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
-          >
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/Jmax_Plaza_1.jpg"
-              alt="J Max Plaza exterior"
-              class="h-40 w-full object-cover transition group-hover:scale-105"
-            />
-            <div class="flex-1 p-4 space-y-2">
-              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
-                Windsor, Ontario
-              </p>
-              <h3 class="text-sm font-semibold text-slate-900">
-                2601 Lauzon Parkway – J Max Plaza
-              </h3>
-              <p class="text-xs text-slate-600">
-                Retail plaza; offering memorandum on its own listing (separate from Radius Center).
-              </p>
-            </div>
-          </a>
-
-          <a
-            href="us-properties.html"
-            class="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-yellow-500/80 hover:shadow-md"
-          >
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/3003_N_Central.webp"
-              alt="US Properties 3003 N Central"
-              class="h-40 w-full object-cover transition group-hover:scale-105"
-            />
-            <div class="flex-1 p-4 space-y-2">
-              <p class="text-xs font-semibold tracking-wide text-yellow-700 uppercase">
-                United States
-              </p>
-              <h3 class="text-sm font-semibold text-slate-900">
-                US Properties – 3003 N Central
-              </h3>
-              <p class="text-xs text-slate-600">
-                Arizona aerial overview PDF and US portfolio materials.
-              </p>
-            </div>
-          </a>
-        </div>
-        <p class="text-xs text-slate-500">
-          Full portfolio list (a–m) is in the <a href="properties.html" class="text-yellow-700 hover:underline">Properties</a> page
-          and under <strong>Properties</strong> in the menu.
-        </p>
-      </section>
-
-      <section class="max-w-6xl mx-auto px-4 pb-14 space-y-4">
-        <header class="space-y-1">
-          <h2 class="text-sm font-semibold tracking-wide uppercase text-slate-500">
-            Selected Signage &amp; Layout References
-          </h2>
-          <p class="text-sm text-slate-600">
-            The images and diagrams below are pulled directly from the client’s marketing and planning materials and reused
-            throughout the site.
-          </p>
-        </header>
-        <div class="grid gap-4 md:grid-cols-4">
-          <figure class="rounded-xl border border-slate-200 bg-white p-3 flex items-center justify-center">
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/image001.png"
-              alt="Awards and certifications graphic"
-              class="max-h-16 w-auto"
-            />
-          </figure>
-          <figure class="rounded-xl border border-slate-200 bg-white p-3 flex items-center justify-center">
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/image002.png"
-              alt="Alternate awards and certifications graphic"
-              class="max-h-16 w-auto"
-            />
-          </figure>
-          <figure class="rounded-xl border border-slate-200 bg-white p-3 flex items-center justify-center">
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/image003.png"
-              alt="Sample unit layout / plan"
-              class="max-h-16 w-auto"
-            />
-          </figure>
-          <figure class="rounded-xl border border-slate-200 bg-white overflow-hidden">
-            <img
-              src="wetransfer_enterprise-way-mp4_2026-03-12_1544/Image15.jpg"
-              alt="Alternate plaza rendering"
-              class="h-24 w-full object-cover"
-            />
-          </figure>
-        </div>
-      </section>
-    </main>
-
-    <footer class="border-t border-yellow-400/80 bg-white">
-      <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <p class="text-xs text-slate-500">
-          &copy; <span id="year"></span> Mikhail Holdings Limited. All rights reserved.
-        </p>
-        <p class="text-xs text-slate-500">
-          For leasing inquiries, email
-          <a href="mailto:leasing@mikhailholdings.com" class="font-medium text-slate-700 hover:text-yellow-700"
-            >leasing@mikhailholdings.com</a
-          >
-        </p>
-      </div>
-    </footer>
-
-    <script>
-      const activeClass = "border-b-2 border-amber-400 text-amber-300";
-      const inactiveClass = "text-white/85";
-      const path = window.location.pathname.split("/").pop() || "index.html";
-      const propertyPages = [
-        "properties.html",
-        "enterprise-way.html",
-        "lauzon-j-max-plaza.html",
-        "pancap.html",
-        "walker-centre.html",
-        "us-properties.html",
-      ];
-
-      let activeKey = "home";
-      if (propertyPages.includes(path)) activeKey = "properties";
-      if (path === "radius-center.html") activeKey = "radius";
-      if (path === "contact.html") activeKey = "contact";
-
-      document.querySelectorAll("[data-nav-link]").forEach((link) => {
-        link.classList.remove("border-b-2", "border-amber-400", "text-amber-300");
-        link.classList.add(inactiveClass);
-        if (link.dataset.navLink === activeKey) {
-          activeClass.split(" ").forEach((cls) => link.classList.add(cls));
-          link.classList.remove(inactiveClass);
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#D4A017',
+            'gold-light': '#E8B830',
+            charcoal: '#2C2C2C',
+            'charcoal-dark': '#1E1E1E',
+          },
+          fontFamily: {
+            display: ['Pro Sans Serif Font', 'sans-serif'],
+            body: ['Pro Sans Serif Font', 'sans-serif'],
+          }
         }
-      });
+      }
+    }
+  </script>
+  <style>
+    .hero-bg {
+      background-image:
+        linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%),
+        url('img/banner.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
 
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900">
+  <header class="relative z-40 border-b border-white/5 bg-charcoal text-white shadow-xl">
+    <div class="border-b border-white/10 py-6 text-center">
+      <a href="index.html" class="inline-block px-4">
+        <h1 class="font-display text-gold text-4xl font-black tracking-widest uppercase py-4">
+          Mikhail Holdings Ltd.
+        </h1>
+      </a>
+    </div>
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4">
+      <nav class="hidden items-center text-sm font-medium lg:flex" aria-label="Primary">
+        <a href="index.html" data-nav-link="home"
+          class="px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">Home</a>
+        <div class="group relative">
+          <a href="properties.html" data-nav-link="properties"
+            class="inline-flex items-center gap-1 px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">
+            Properties
+            <span class="text-[10px]" aria-hidden="true">▾</span>
+          </a>
+          <div
+            class="invisible absolute left-0 top-full z-50 w-[min(100vw-2rem,44rem)] pt-2 opacity-0 transition-opacity group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            <div class="rounded-xl border border-slate-700 bg-slate-900 p-4 text-xs shadow-2xl">
+              <p class="mb-2 text-[10px] font-semibold uppercase tracking-wide text-amber-300/70">Quick links</p>
+              <div class="mb-3 flex flex-wrap gap-x-4 gap-y-1 border-b border-white/10 pb-3">
+                <a href="enterprise-way.html" class="text-white/85 hover:text-amber-300">Enterprise Way Townhomes</a>
+                <a href="radius-center.html" class="text-white/85 hover:text-amber-300">Radius Center</a>
+                <a href="pancap.html" class="text-white/85 hover:text-amber-300">Pancap</a>
+                <a href="walker-centre.html" class="text-white/85 hover:text-amber-300">4450 Walker Road Plaza</a>
+                <a href="lauzon-j-max-plaza.html" class="text-white/85 hover:text-amber-300">J Max Plaza</a>
+                <a href="us-properties.html" class="text-white/85 hover:text-amber-300">US Properties</a>
+              </div>
+              <p class="mb-2 text-[10px] font-semibold uppercase tracking-wide text-amber-300/70">Our properties</p>
+              <div class="grid max-h-[min(60vh,22rem)] grid-cols-1 gap-x-6 gap-y-0.5 overflow-y-auto sm:grid-cols-2">
+                <a href="properties.html#a-cibc-ouellette" class="py-1.5 text-white/85 hover:text-amber-300">a. CIBC -
+                  100 Ouellette, Windsor</a>
+                <a href="properties.html#b-university-33" class="py-1.5 text-white/85 hover:text-amber-300">b. 33
+                  University, Windsor</a>
+                <a href="lauzon-j-max-plaza.html" class="py-1.5 text-white/85 hover:text-amber-300">c. 2601 Lauzon
+                  Parkway - J Max Plaza</a>
+                <a href="enterprise-way.html" class="py-1.5 text-white/85 hover:text-amber-300">d. Enterprise Way
+                  Townhomes</a>
+                <a href="properties.html#e-howard-2679" class="py-1.5 text-white/85 hover:text-amber-300">e. 2679
+                  Howard</a>
+                <a href="pancap.html" class="py-1.5 text-white/85 hover:text-amber-300">f. Pancap</a>
+                <a href="walker-centre.html" class="py-1.5 text-white/85 hover:text-amber-300">g. 4450 Walker Road
+                  Plaza</a>
+                <a href="properties.html#h-staples-plaza" class="py-1.5 text-white/85 hover:text-amber-300">h. Staples
+                  Plaza</a>
+                <a href="properties.html#i-landmark-plaza" class="py-1.5 text-white/85 hover:text-amber-300">i. Landmark
+                  Plaza</a>
+                <a href="properties.html#j-walmart-amherstburg" class="py-1.5 text-white/85 hover:text-amber-300">j.
+                  Wal-Mart, Amherstburg</a>
+                <a href="properties.html#k-sobeys-amherstburg" class="py-1.5 text-white/85 hover:text-amber-300">k.
+                  Sobeys, Amherstburg</a>
+                <a href="properties.html#l-leamington-waterfront" class="py-1.5 text-white/85 hover:text-amber-300">l.
+                  Leamington Waterfront Townhomes</a>
+                <a href="us-properties.html" class="py-1.5 text-white/85 hover:text-amber-300">m. US Properties - 3003 N
+                  Central</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="radius-center.html" data-nav-link="radius"
+          class="px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">Radius Center</a>
+        <a href="contact.html" data-nav-link="contact"
+          class="px-4 py-3 text-white/85 transition hover:bg-amber-500 hover:text-slate-900">Contact</a>
+      </nav>
+      <a href="contact.html"
+        class="my-2 inline-flex items-center justify-center rounded-full border border-amber-400 bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 whitespace-nowrap">
+        Lease With Us
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg min-h-[660px] flex items-end pb-64 px-6 md:px-12 relative overflow-hidden">
+    <!-- Subtle bottom gradient -->
+    <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black/60 to-transparent pointer-events-none">
+    </div>
+
+    <h2
+      class="relative font-display text-white  mx-auto text-[4.3rem] font-black leading-tight drop-shadow-2xl max-w-full tracking-wide font-bold">
+      Commercial, Residential and Industrial Developers
+    </h2>
+  </section>
+
+  <main class="w-full font-sans">
+    <section class="bg-[#EEEEEE] py-16 px-4">
+      <div class="max-w-9xl mx-auto">
+        <h2 class="text-center text-4xl font-semibold text-gold mb-12">
+          Company Structure
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-12 max-w-7xl mx-auto">
+          <div class="flex items-center space-x-4">
+            <span class="h-5 w-5 rounded-full bg-gold shrink-0"></span>
+            <a href="/RealEstate/Commercial Retail Space/parkway-centre-windsor-ontario.html"
+              class="text-3xl font-semibold text-[#333333] uppercase tracking-tight">Real
+              Estate</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <span class="h-5 w-5 rounded-full bg-gold shrink-0"></span>
+            <span class="text-3xl font-semibold text-[#333333] uppercase tracking-tight">Manufacturing</span>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <span class="h-5 w-5 rounded-full bg-gold shrink-0"></span>
+            <span class="text-3xl font-semibold text-[#333333] uppercase tracking-tight">Research &
+              Development</span>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <span class="h-6 w-6 rounded-full bg-gold shrink-0"></span>
+            <span class="text-3xl font-semibold text-[#333333] uppercase tracking-tight">Retail/Consumer
+              Development</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="bg-[#222222] py-10 px-4 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto text-center">
+      <h3 class="text-4xl font-bold tracking-wider text-[#D4A017] uppercase mb-4">
+        Mikhail Holdings Ltd.
+      </h3>
+      <p class="text-gray-400 text-xs md:text-sm">
+        Copyright © 2026 Mikhail Holdings Ltd.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const activeClass = "border-b-2 border-amber-400 text-amber-300";
+    const inactiveClass = "text-white/85";
+    const path = window.location.pathname.split("/").pop() || "index.html";
+    const propertyPages = [
+      "properties.html",
+      "enterprise-way.html",
+      "lauzon-j-max-plaza.html",
+      "pancap.html",
+      "walker-centre.html",
+      "us-properties.html",
+    ];
+
+    let activeKey = "home";
+    if (propertyPages.includes(path)) activeKey = "properties";
+    if (path === "radius-center.html") activeKey = "radius";
+    if (path === "contact.html") activeKey = "contact";
+
+    document.querySelectorAll("[data-nav-link]").forEach((link) => {
+      link.classList.remove("border-b-2", "border-amber-400", "text-amber-300");
+      link.classList.add(inactiveClass);
+      if (link.dataset.navLink === activeKey) {
+        activeClass.split(" ").forEach((cls) => link.classList.add(cls));
+        link.classList.remove(inactiveClass);
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
-
